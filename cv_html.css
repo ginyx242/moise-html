@@ -1,0 +1,139 @@
+/* --- RESET ET POLICES --- */
+•	{
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: border-box;
+    Font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+Body {
+    Background-color: #f0f2f5;
+    Display: flex;
+    Justify-content: center;
+    Padding: 40px 0;
+}
+
+/* --- CONTENEUR PRINCIPAL (Feuille A4) --- */
+.cv-container {
+    Background-color: white;
+    Width: 210mm; /* Largeur A4 */
+    Min-height: 297mm; /* Hauteur A4 min */
+    Display: flex;
+    Box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* --- SIDEBAR (GAUCHE) --- */
+.sidebar {
+    Background-color: #02b96def; /* Bleu foncé */
+    Color: white;
+    Width: 30%;
+    Padding: 30px 20px;
+    Text-align: center;
+}
+
+.profile-img {
+    Width: 150px;
+    Height: 150px;
+    Border-radius: 50%;
+    Border: 4px solid #03270e;
+    Object-fit: cover;
+    Margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    Text-transform: uppercase;
+    Margin: 20px 0 10px 0;
+    Border-bottom: 1px solid rgba(255,255,255,0.3);
+    Padding-bottom: 5px;
+    Font-size: 1.1rem;
+}
+
+.sidebar ul {
+    List-style: none;
+    Text-align: left;
+    Margin-left: 10px;
+}
+
+.sidebar li {
+    Margin-bottom: 10px;
+    Font-size: 0.9rem;
+    Display: flex;
+    Align-items: center;
+}
+
+.sidebar li I {
+    Width: 25px;
+    Margin-right: 10px;
+}
+
+/* --- CONTENU PRINCIPAL (DROITE) --- */
+.main-content {
+    Width: 70%;
+    Padding: 40px;
+    Color: #333;
+}
+
+.header-name h1 {
+    Font-size: 3rem;
+    Text-transform: uppercase;
+    Color: #2c3e50;
+    Line-height: 1;
+}
+
+.header-name h2 {
+    Font-size: 1.5rem;
+    Font-weight: 300;
+    Color: #7f8c8d;
+    Margin-bottom: 30px;
+}
+
+.main-content h3 {
+    Color: #2c3e50;
+    Text-transform: uppercase;
+    Border-bottom: 2px solid #2c3e50;
+    Padding-bottom: 5px;
+    Margin: 30px 0 15px 0;
+}
+
+.main-content h3 I {
+    Margin-right: 10px;
+}
+
+.job, .degree {
+    Margin-bottom: 20px;
+}
+
+.job h4, .degree h4 {
+    Font-size: 1.1rem;
+    Font-weight: bold;
+}
+
+.date {
+    Font-style: italic;
+    Color: #7f8c8d;
+    Font-size: 0.9rem;
+    Display: block;
+    Margin-bottom: 5px;
+}
+
+.main-content ul {
+    Margin-left: 20px;
+    Margin-top: 5px;
+}
+
+.main-content li {
+    Margin-bottom: 5px;
+}
+
+/* --- RESPONSIVE (Pour mobile) --- */
+@media (max-width: 768px) {
+    .cv-container {
+        Flex-direction: column;
+        Width: 100%;
+        Height: auto;
+    }
+    .sidebar, .main-content {
+        Width: 100%;
+    }
+}
+
